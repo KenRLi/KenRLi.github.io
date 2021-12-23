@@ -418,15 +418,73 @@ h3.my-profession
     font-weight: 400;
     color: var(--text-black-700);
 }
+
+.skills .skill-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.skills .skill-item .skill-item-inner
+{
+    min-height: 325px;
+    padding: 30px 15px;
+    text-align: center;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.skills .skill-item .skill-item-inner:hover
+{
+    box-shadow: 0 0 20px rgba(64, 64, 64, 0.15);
+}
+.skills .skill-item .skill-item-inner .icon
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    transition: all 0.3s ease;
+}
+.skills .skill-item .skill-item-inner .icon .fas
+{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-colour);
+}
+.skills .skill-item .skill-item-inner:hover .icon
+{
+    background: var(--skin-colour);
+}
+.skills .skill-item .skill-item-inner:hover .fas
+{
+    font-size: 25px;
+    color: var(--bg-black-100);   
+}
+.skills .skill-item .skill-item-inner h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+}
+.skills .skill-item .skill-item-inner ul
+{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
 .timeline .timeline-box
 {
     flex: 0 0 100%;
-    max-width: 100%;
-    background-color: var(--bg-black-100);
+    width: 100%;
     padding: 30px 15px;
+    background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
-    width: 100%;
     position: relative;
 }
 .timeline .timeline-box .timeline-item
