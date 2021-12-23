@@ -1,10 +1,10 @@
 :root
 {
-    --bg-black-900:#d9d9d9;
+    --bg-black-900:#e6e6e6;
     --bg-black-100: #f2f2f2;
-    --bg-black-50:#a6a6a6;
+    --bg-black-50:#999999;
     --text-black-900:#333333;
-    --text-black-700: #808080;
+    --text-black-700: #4d4d4d;
 };
 
 body
@@ -39,6 +39,10 @@ ul
     padding: 0 30px;
     opacity: 1;
 }
+.hidden
+{
+    display:none !important;
+}
 .main-content
 {
     padding-left: 20%;
@@ -52,6 +56,45 @@ ul
     max-width: 1100px;
     width: 100%;
     margin: auto;
+}
+.section .container
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2
+{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before
+{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-colour);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after
+{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-colour);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
 }
 .row
 {
@@ -283,4 +326,106 @@ h3.my-profession
 .typing
 {
     color: var(--skin-colour);
+}
+
+.about .about-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-text
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-text h3
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-700);
+}
+.about .about-content .about-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.about .about-content .experiences
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+.about .about-content .experiences .experiences-title
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+.about .about-content .experiences .experiences-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .experiences .experiences-item h5
+{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+}
+.about .about-content .experiences .experiences-item .progress
+{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    position: relative;
+}
+.about .about-content .experiences .experiences-item .progress .progress-in
+{
+    background-color: var(--skin-colour);
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.about .about-content .experiences .experiences-item .experiences-percent
+{
+    position: absolute;
+    right: 0%;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.about .about-content .hobbies
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+.about .about-content .hobbies-title
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+.about .about-content .hobbies .hobbies-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .hobbies .hobbies-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .hobbies .hobbies-item p span
+{
+    font-weight: 400;
+    color: var(--text-black-700);
 }
