@@ -116,9 +116,17 @@ ul
     transition: all 0.3s ease;
     border: none;
 }
+.btn:not(:first-of-type)
+{
+    margin-left: 5px;
+}
 .btn:hover
 {
     transform: scale(1.05);
+}
+.shadow-dark
+{
+    box-shadow: 0 0 20px rgba(64, 64, 64, 0.15);
 }
 .sidebar
 {
@@ -333,17 +341,12 @@ h3.my-profession
     flex: 0 0 100%;
     max-width: 100%;
 }
-.about .about-content .about-text
-{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
 .about .about-content .about-text h3
 {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 700;
-    color: var(--text-black-700);
+    color: var(--text-black-900);
 }
 .about .about-content .about-text p
 {
@@ -351,18 +354,21 @@ h3.my-profession
     line-height: 25px;
     color: var(--text-black-700);
 }
-.about .about-content .experiences
+.about .about-content .experiences,
+.about .about-content .hobbies
 {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 40px;
 }
-.about .about-content .experiences .experiences-title
+.about .about-content .experiences .experiences-title,
+.about .about-content .hobbies .hobbies-title
 {
     font-weight: 600;
     font-size: 20px;
 }
-.about .about-content .experiences .experiences-item
+.about .about-content .experiences .experiences-item,
+.about .about-content .hobbies .hobbies-item
 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -372,7 +378,7 @@ h3.my-profession
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
-    color: var(--text-black-900);
+    color: var(--text-black-700);
 }
 .about .about-content .experiences .experiences-item .progress
 {
@@ -399,33 +405,82 @@ h3.my-profession
     font-weight: 400;
     line-height: 40px;
 }
-
-.about .about-content .hobbies
-{
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 40px;
-}
-.about .about-content .hobbies-title
-{
-    font-weight: 600;
-    font-size: 20px;
-}
-.about .about-content .hobbies .hobbies-item
-{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
 .about .about-content .hobbies .hobbies-item p
 {
     font-weight: 600;
     padding: 10px 0;
     font-size: 16px;
-    color: var(--text-black-900);
+    color: var(--text-black-700);
     border-bottom: 1px solid var(--bg-black-50);
 }
 .about .about-content .hobbies .hobbies-item p span
 {
     font-weight: 400;
+    color: var(--text-black-700);
+}
+.timeline .timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.timeline .timeline-box .timeline-item
+{
+    position: relative; 
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.timeline .timeline-box .timeline-item:last-child
+{
+    padding-bottom: 0px;
+}
+.timeline .timeline-box .timeline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-colour);
+}
+.timeline .timeline-box .timeline-item .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-colour);
+}
+.timeline .timeline-box .timeline-date
+{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.timeline .timeline-box .timeline-date .far
+{
+    margin-right: 5px;
+}
+.timeline .timeline-box .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+}
+.timeline .timeline-box .timeline-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
     color: var(--text-black-700);
 }
