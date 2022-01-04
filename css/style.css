@@ -5,8 +5,16 @@
     --bg-black-50:#999999;
     --text-black-900:#333333;
     --text-black-700: #4d4d4d;
-};
+}
 
+body.dark
+{
+    --bg-black-900:#333333;
+    --bg-black-100: #4d4d4d;
+    --bg-black-50:#999999;
+    --text-black-900:#e6e6e6;
+    --text-black-700: #f2f2f2;
+}
 body
 {
     margin: 0;
@@ -366,6 +374,7 @@ h3.my-profession
 {
     font-weight: 600;
     font-size: 20px;
+    color: var(--text-black-900);
 }
 .about .about-content .experiences .experiences-item,
 .about .about-content .hobbies .hobbies-item
