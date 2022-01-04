@@ -645,3 +645,53 @@ h3.my-profession
     height: 50px;
     padding: 0 50px;
 }
+
+@media (max-width:1199px)
+{
+    .sidebar
+    {
+        left: -270px
+    }
+    .main-content
+    {
+        padding-left: 0;
+    }
+    .home .about .skills .timeline .projects p span
+    {
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width:990px)
+{
+    .home .home-info,
+    .projects .project-item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .skills .skill-item
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .projects .project-item .project-item-inner
+    {
+        min-height: 0px;
+    }
+    .home .home-img
+    {
+        display: none;
+    }
+}
+@media (max-width:767px)
+{
+    .about .about-content .experiences,
+    .about .about-content .hobbies,
+    .skills .skill-item,
+    .contact .contact-form .col-6
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
