@@ -673,11 +673,17 @@ h3.my-profession
 .contact .contact-form .form-item textarea.form-control
 {
     height: 140px;
+    min-height: 140px;
+    resize: vertical;
 }
 .contact .contact-form .btn
 {
     height: 50px;
     padding: 0 50px;
+}
+.contact .contact-form .form-item .status-message
+{
+    color: var(--text-black-700);
 }
 
 @media (max-width:1199px)

@@ -339,35 +339,26 @@
                     </div>
                     <h3 class="contact-title pad-15">Feel free to send me a message!</h3>
                     <div class="row">
-                        <div class="contact-form pad-15">
+                        <form action="https://formspree.io/f/xnqwngga" method ="POST" class="contact-form pad-15" id="email-form">
                             <div class="row">
                                 <div class="form-item col-6 pad-15">
-                                    <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name">
-                                    </div>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
                                 </div>
                                 <div class="form-item col-6 pad-15">
-                                    <div class="form-group">
-                                        <input type="text" name="email" id="email" class="form-control" placeholder="Email">
-                                    </div>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
                                 </div>
                                 <div class="form-item col-12 pad-15">
-                                    <div class="form-group">
-                                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
-                                    </div>
+                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" required>
                                 </div>
                                 <div class="form-item col-12 pad-15">
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" class="form-control" placeholder="Message"></textarea>
-                                    </div>
+                                    <textarea name="message" id="message" class="form-control" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="form-item col-12 pad-15">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn">Send Message</button>
-                                    </div>
+                                    <button type="submit" class="btn">Send Message</button>
+                                    <span class="status-message pad-15" id="form-status"></span>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>

@@ -5,10 +5,7 @@ var typed = new Typed(".typing", {
     loop: true
 })
 
-const nav = document.querySelector(".nav"),
-    navList = nav.querySelectorAll("li"),
-    totalNavList = navList.length,
-    allSections = document.querySelectorAll(".section"),
+const allSections = document.querySelectorAll(".section"),
     totalSections = allSections.length;
 
 const navTogglerBtn = document.querySelector(".nav-toggler"),
@@ -27,3 +24,24 @@ function sidebarSectionTogglerBtn()
         allSections[i].classList.toggle("open");
     }
 }
+
+var form = document.getElementById("email-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Message Sent!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "There was a problem sending your message. Please try again later."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
