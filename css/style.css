@@ -347,6 +347,10 @@ ul
 {
     margin-bottom: 50px;
 }
+.home .home-info a
+{
+    margin-bottom: 16px;
+}
 h3.welcome
 {
     font-size: 28px;
@@ -690,7 +694,7 @@ h3.my-profession
 {
     .sidebar
     {
-        left: -20%;
+        left: -30%;
     }
     .sidebar.open
     {
@@ -739,6 +743,10 @@ h3.my-profession
     .home .home-img
     {
         display: none;
+    }
+    .sidebar .logo
+    {
+        display: none !important;
     }
 }
 @media (max-width:767px)
